@@ -18,9 +18,11 @@ public class FilmprogrammClientProxy {
 	public List<Vorführung> getVorführungen() throws UnirestException, NamingException {
 		List<Vorführung> vorführungen = null;
 
-		URI uri = URI.create("http://localhost:50000/vorführungen");
+		URI uri = URI.create("http://kino-ticket-service.kino/vorführungen");
 
 		HttpResponse<String> response = Unirest.get(uri.toString()).asString();
+		System.out.println("Filmprogramm-Service: " + response.getStatus());
+		System.out.println("Filmprogramm-Service-Body: " + response.getBody());
 		Type vorführungsListenTyp = new TypeToken<List<Vorführung>>() {
 		}.getType();
 		vorführungen = gson.fromJson(response.getBody(), vorführungsListenTyp);

@@ -16,7 +16,7 @@ public class ReservierungsClientProxy {
 	private URI serviceUri;
 
 	public ReservierungsClientProxy() {
-		serviceUri = URI.create("http://localhost:45000");
+		serviceUri = URI.create("http://reservierung-service:kino");
 	}
 
 	public List<Saal> getSäle() throws UnirestException {
@@ -38,6 +38,8 @@ public class ReservierungsClientProxy {
 		URI uri = URI.create(serviceUri.toString() + "/sitzplatzbelegung/" + vorführungsid);
 
 		HttpResponse<String> response = Unirest.get(uri.toString()).asString();
+		System.out.println("Reservierung-Service: " + response.getStatus());
+		System.out.println("Reservierung-Service-Body: " + response.getBody());
 		Sitzplatzbelegung sitzplatzbelegung = gson.fromJson(response.getBody(), Sitzplatzbelegung.class);
 
 		return sitzplatzbelegung;

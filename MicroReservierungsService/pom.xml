@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.wps.devopstut</groupId>
 	<artifactId>MicroReservierungsService</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.6-SNAPSHOT</version>
 	<name>ServiceOne</name>
 
 	<properties>
@@ -107,12 +107,12 @@
 		<dependency>
 			<groupId>de.wps.devopstut</groupId>
 			<artifactId>MicroFilmprogrammServiceClient</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.8-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>de.wps.devopstut</groupId>
 			<artifactId>MicroReservierungsServiceClient</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.7-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>

@@ -121,7 +121,7 @@
 		<dependency>
 			<groupId>de.wps.devopstut</groupId>
 			<artifactId>MicroReservierungsServiceClient</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.8-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>de.wps.devopstut</groupId>
@@ -132,7 +132,7 @@
 		<dependency>
 			<groupId>de.wps.devopstut</groupId>
 			<artifactId>MicroFilmprogrammServiceClient</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.8-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
